@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria Zhis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sorveteria Zhis</h1>
+    </header>
+
+    <div class="pedido-container">
+        <div class="pedido-form">
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" placeholder="Seu nome aqui">
+            
+            <label for="quantidade">Quantidade:</label>
+            <input id="quantidade" type="number" min="1" placeholder="Quantos sorvetes quer?">
+            
+            <label for="sabores">Sabor:</label>
+            <select id="sabores">
+                <option value="morango">Morango</option>
+                <option value="kinderovo">Kinder Ovo</option>
+                <option value="baunilha">Baunilha</option>
+                <option value="limao">Limão</option>
+                <option value="menta">Menta</option>
+                <option value="cookies">Cookies</option>
+            </select>
+            
+            <button id="botao">Fazer pedido</button>
+        </div>
+        <div class="pedido-resumo">
+            <p id="pedidoNome"></p>
+            <p id="pedidoQuantia"></p>
+            <p id="pedidoSabor"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
